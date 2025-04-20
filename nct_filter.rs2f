@@ -4742,144 +4742,6 @@ apply (name:VAR_CURRENCY_ITEMS) {
 }
 
 
-
-
-
-/*@ define:module:item_values
----
-name: Item values
-*/
-
-#define VAR_VALUE_T9_ENABLED false
-#define VAR_VALUE_T8_ENABLED false
-#define VAR_VALUE_T7_ENABLED false
-#define VAR_VALUE_T6_ENABLED false
-#define VAR_VALUE_T5_ENABLED true
-#define VAR_VALUE_T4_ENABLED true
-#define VAR_VALUE_T3_ENABLED true
-#define VAR_VALUE_T2_ENABLED true
-#define VAR_VALUE_T1_ENABLED true
-#define VAR_VALUE_T0_ENABLED true
-
-#define VAR_VALUE_T9_VALUE 0
-#define VAR_VALUE_T8_VALUE 0
-#define VAR_VALUE_T7_VALUE 0
-#define VAR_VALUE_T6_VALUE 0
-/*@ define:input:item_values
-type: number
-label: Value
-group: t5
-*/
-#define VAR_VALUE_T5_VALUE 100000000
-
-/*@ define:input:item_values
-type: number
-label: Value
-group: t4
-*/
-#define VAR_VALUE_T4_VALUE 10000000
-
-/*@ define:input:item_values
-type: number
-label: Value
-group: t3
-*/
-#define VAR_VALUE_T3_VALUE 1000000
-
-/*@ define:input:item_values
-type: number
-label: Value
-group: t2
-*/
-#define VAR_VALUE_T2_VALUE 500000
-
-/*@ define:input:item_values
-type: number
-label: Value
-group: t1
-*/
-#define VAR_VALUE_T1_VALUE 100000
-
-/*@ define:input:item_values
-type: number
-label: Value
-group: t0
-*/
-#define VAR_VALUE_T0_VALUE 10000
-
-
-#define VAR_VALUE_T9_CUSTOMSTYLE 
-#define VAR_VALUE_T8_CUSTOMSTYLE 
-#define VAR_VALUE_T7_CUSTOMSTYLE 
-#define VAR_VALUE_T6_CUSTOMSTYLE 
-/*@ define:input:item_values
-type: style
-label: Style
-group: t5
-exampleItem: Divine Orb
-*/
-#define VAR_VALUE_T5_CUSTOMSTYLE textColor = "#FFFF66B2";backgroundColor = "#00ffaa4f";borderColor = "#00ff3098";textAccentColor = "#ff000000";menuTextColor = "#FFFF66B2";textAccent = 1;fontType = 3;showLootbeam = true;sound = "AlertSound6.wav";
-
-/*@ define:input:item_values
-type: style
-label: Style
-group: t4
-*/
-#define VAR_VALUE_T4_CUSTOMSTYLE textColor = "#FFFF66B2";backgroundColor = "#00f0a524";borderColor = "#00ff3098";textAccentColor = "#ff000000";menuTextColor = "#FFFF66B2";textAccent = 1;fontType = 1;showLootbeam = true;sound = "AlertSound2.wav";
-
-/*@ define:input:item_values
-type: style
-label: Style
-group: t3
-*/
-#define VAR_VALUE_T3_CUSTOMSTYLE textColor = "#FFFF9600";backgroundColor = "#00f0a524";borderColor = "#00ff66b3";textAccentColor = "#ff000000";lootbeamColor = "#f0a523";menuTextColor = "#FFFF9600";textAccent = 1;fontType = 1;showLootbeam = true;sound = "AlertSound4.wav";
-
-/*@ define:input:item_values
-type: style
-label: Style
-group: t2
-*/
-#define VAR_VALUE_T2_CUSTOMSTYLE textColor = "#50FF7E";borderColor = "#FFFF9600";textAccent = 2;
-
-/*@ define:input:item_values
-type: style
-label: Style
-group: t1
-*/
-#define VAR_VALUE_T1_CUSTOMSTYLE textColor = "#50FF7E";textAccentColor = "#ff000000";textAccent = 1;fontType = 1;
-
-/*@ define:input:item_values
-type: style
-label: Style
-group: t0
-*/
-#define VAR_VALUE_T0_CUSTOMSTYLE textColor = "#66B2FF";showLootbeam = false;
-
-rule (value:>=VAR_VALUE_T5_VALUE) {
-  hidden = false;
-  VAR_VALUE_T5_CUSTOMSTYLE
-}
-rule (value:>=VAR_VALUE_T4_VALUE) {
-  hidden = false;
-  VAR_VALUE_T4_CUSTOMSTYLE
-}
-rule (value:>=VAR_VALUE_T3_VALUE) {
-  hidden = false;
-  VAR_VALUE_T3_CUSTOMSTYLE
-}
-rule (value:>=VAR_VALUE_T2_VALUE) {
-  hidden = false;
-  VAR_VALUE_T2_CUSTOMSTYLE
-}
-rule (value:>=VAR_VALUE_T1_VALUE) {
-  hidden = false;
-  VAR_VALUE_T1_CUSTOMSTYLE
-}
-rule (value:>=VAR_VALUE_T0_VALUE) {
-  hidden = false;
-  VAR_VALUE_T0_CUSTOMSTYLE
-}
-
 /*@ define:module:runes
 ---
 name: Runes
@@ -5420,4 +5282,140 @@ apply (name:"Lava rune") {
 }
 apply (name:"Lava rune" && quantity:<VAR_LAVA_RUNE_MIN_QUANTITY) {
     hidden = true;
+}
+
+
+/*@ define:module:item_values
+---
+name: Item values
+*/
+
+#define VAR_VALUE_T9_ENABLED false
+#define VAR_VALUE_T8_ENABLED false
+#define VAR_VALUE_T7_ENABLED false
+#define VAR_VALUE_T6_ENABLED false
+#define VAR_VALUE_T5_ENABLED true
+#define VAR_VALUE_T4_ENABLED true
+#define VAR_VALUE_T3_ENABLED true
+#define VAR_VALUE_T2_ENABLED true
+#define VAR_VALUE_T1_ENABLED true
+#define VAR_VALUE_T0_ENABLED true
+
+#define VAR_VALUE_T9_VALUE 0
+#define VAR_VALUE_T8_VALUE 0
+#define VAR_VALUE_T7_VALUE 0
+#define VAR_VALUE_T6_VALUE 0
+/*@ define:input:item_values
+type: number
+label: Value
+group: t5
+*/
+#define VAR_VALUE_T5_VALUE 100000000
+
+/*@ define:input:item_values
+type: number
+label: Value
+group: t4
+*/
+#define VAR_VALUE_T4_VALUE 10000000
+
+/*@ define:input:item_values
+type: number
+label: Value
+group: t3
+*/
+#define VAR_VALUE_T3_VALUE 1000000
+
+/*@ define:input:item_values
+type: number
+label: Value
+group: t2
+*/
+#define VAR_VALUE_T2_VALUE 500000
+
+/*@ define:input:item_values
+type: number
+label: Value
+group: t1
+*/
+#define VAR_VALUE_T1_VALUE 100000
+
+/*@ define:input:item_values
+type: number
+label: Value
+group: t0
+*/
+#define VAR_VALUE_T0_VALUE 10000
+
+
+#define VAR_VALUE_T9_CUSTOMSTYLE 
+#define VAR_VALUE_T8_CUSTOMSTYLE 
+#define VAR_VALUE_T7_CUSTOMSTYLE 
+#define VAR_VALUE_T6_CUSTOMSTYLE 
+/*@ define:input:item_values
+type: style
+label: Style
+group: t5
+exampleItem: Divine Orb
+*/
+#define VAR_VALUE_T5_CUSTOMSTYLE textColor = "#FFFF66B2";backgroundColor = "#00ffaa4f";borderColor = "#00ff3098";textAccentColor = "#ff000000";menuTextColor = "#FFFF66B2";textAccent = 1;fontType = 3;showLootbeam = true;sound = "AlertSound6.wav";
+
+/*@ define:input:item_values
+type: style
+label: Style
+group: t4
+*/
+#define VAR_VALUE_T4_CUSTOMSTYLE textColor = "#FFFF66B2";backgroundColor = "#00f0a524";borderColor = "#00ff3098";textAccentColor = "#ff000000";menuTextColor = "#FFFF66B2";textAccent = 1;fontType = 1;showLootbeam = true;sound = "AlertSound2.wav";
+
+/*@ define:input:item_values
+type: style
+label: Style
+group: t3
+*/
+#define VAR_VALUE_T3_CUSTOMSTYLE textColor = "#FFFF9600";backgroundColor = "#00f0a524";borderColor = "#00ff66b3";textAccentColor = "#ff000000";lootbeamColor = "#f0a523";menuTextColor = "#FFFF9600";textAccent = 1;fontType = 1;showLootbeam = true;sound = "AlertSound4.wav";
+
+/*@ define:input:item_values
+type: style
+label: Style
+group: t2
+*/
+#define VAR_VALUE_T2_CUSTOMSTYLE textColor = "#50FF7E";borderColor = "#FFFF9600";textAccent = 2;
+
+/*@ define:input:item_values
+type: style
+label: Style
+group: t1
+*/
+#define VAR_VALUE_T1_CUSTOMSTYLE textColor = "#50FF7E";textAccentColor = "#ff000000";textAccent = 1;fontType = 1;
+
+/*@ define:input:item_values
+type: style
+label: Style
+group: t0
+*/
+#define VAR_VALUE_T0_CUSTOMSTYLE textColor = "#66B2FF";showLootbeam = false;
+
+rule (value:>=VAR_VALUE_T5_VALUE) {
+  hidden = false;
+  VAR_VALUE_T5_CUSTOMSTYLE
+}
+rule (value:>=VAR_VALUE_T4_VALUE) {
+  hidden = false;
+  VAR_VALUE_T4_CUSTOMSTYLE
+}
+rule (value:>=VAR_VALUE_T3_VALUE) {
+  hidden = false;
+  VAR_VALUE_T3_CUSTOMSTYLE
+}
+rule (value:>=VAR_VALUE_T2_VALUE) {
+  hidden = false;
+  VAR_VALUE_T2_CUSTOMSTYLE
+}
+rule (value:>=VAR_VALUE_T1_VALUE) {
+  hidden = false;
+  VAR_VALUE_T1_CUSTOMSTYLE
+}
+rule (value:>=VAR_VALUE_T0_VALUE) {
+  hidden = false;
+  VAR_VALUE_T0_CUSTOMSTYLE
 }
