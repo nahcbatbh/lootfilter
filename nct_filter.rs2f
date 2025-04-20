@@ -5318,82 +5318,113 @@ CONST_POTION_HIGHLIGHT("*bastion potion*", "#db721c", VAR_POTION_BASTION_USERSTY
 
 
 
-/*@ define:module:clues
+/*@ define:module:clue_scrolls
 ---
-name: Clues
+name: Clue Scrolls
+subtitle: Can you do me one small favor?
+description: |
+  This module provides clue tier filters and custom styling for each clue tier.
 */
 
-/*@ define:input:clues
+/*@ define:input:clue_scrolls
 type: enumlist
-label: Clue tiers to Hide
+label: Clue tiers to force hidden
 enum: [
-  "clue scroll (beginner)",
-  "clue scroll (easy)",
-  "clue scroll (medium)",
-  "clue scroll (hard)",
-  "clue scroll (elite)",
-  "clue scroll (master)"
+  {
+    "value": "Clue scroll (beginner)",
+    "label": "Beginner"
+  },
+  {
+    "value": "Clue scroll (easy)",
+    "label": "Easy"
+  },
+  {
+    "value": "Clue scroll (medium)",
+    "label": "Medium"
+  },
+  {
+    "value": "Clue scroll (hard)",
+    "label": "Hard"
+  },
+  {
+    "value": "Clue scroll (elite)",
+    "label": "Elite"
+  },
+  {
+    "value": "Clue scroll (master)",
+    "label": "Master"
+  }
 ]
 */
-#define VAR_CLUE_HIDE []
+#define VAR_CLUE_SCROLLS_HIDE []
 
 
-/*@ define:input:clues
+/*@ define:input:clue_scrolls
 type: style
-label: Beginner clue
+label: Beginner clue scroll custom style
+exampleItem: Clue scroll (beginner)
 */
-#define VAR_CLUE_BEGINNER_CUSTOMSTYLE textColor = "#ffffff";backgroundColor = "#beb287";borderColor = "#ffffff";
+#define VAR_CLUE_SCROLLS_BEGINNER_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80908062";borderColor = "#FFCFC8C8";textAccentColor = "#FF000000";menuTextColor = "#FFCFC8C8";
 
-/*@ define:input:clues
+/*@ define:input:clue_scrolls
 type: style
-label: Easy clue
+label: Easy clue scroll custom style
+exampleItem: Clue scroll (easy)
 */
-#define VAR_CLUE_EASY_CUSTOMSTYLE textColor = "#09600d";backgroundColor = "#beb287";borderColor = "#09600d";
+#define VAR_CLUE_SCROLLS_EASY_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80908062";borderColor = "#FF248F26";textAccentColor = "#FF000000";menuTextColor = "#FF248F26";
 
-/*@ define:input:clues
+/*@ define:input:clue_scrolls
 type: style
-label: Medium clue
+label: Medium clue scroll custom style
+exampleItem: Clue scroll (medium)
 */
-#define VAR_CLUE_MEDIUM_CUSTOMSTYLE textColor = "#569699";backgroundColor = "#beb287";borderColor = "#569699";
+#define VAR_CLUE_SCROLLS_MEDIUM_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80908062";borderColor = "#FF6CBBBF";textAccentColor = "#FF000000";menuTextColor = "#FF6CBBBF";
 
-/*@ define:input:clues
+/*@ define:input:clue_scrolls
 type: style
-label: Hard clue
+label: Hard clue scroll custom style
+exampleItem: Clue scroll (hard)
 */
-#define VAR_CLUE_HARD_CUSTOMSTYLE textColor = "#833798";backgroundColor = "#beb287";borderColor = "#833798";
+#define VAR_CLUE_SCROLLS_HARD_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80908062";borderColor = "#FFA343BD";textAccentColor = "#FF000000";menuTextColor = "#FFA343BD";
 
-/*@ define:input:clues
+/*@ define:input:clue_scrolls
 type: style
-label: Elite clue
+label: Elite clue scroll custom style
+exampleItem: Clue scroll (elite)
 */
-#define VAR_CLUE_ELITE_CUSTOMSTYLE textColor = "#bda518";backgroundColor = "#beb287";borderColor = "#bda518";
+#define VAR_CLUE_SCROLLS_ELITE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80908062";borderColor = "#FFEED11D";textAccentColor = "#FF000000";menuTextColor = "#FFEED11D";
 
-/*@ define:input:clues
+/*@ define:input:clue_scrolls
 type: style
-label: Master clue
+label: Master clue scroll custom style
+exampleItem: Clue scroll (master)
 */
-#define VAR_CLUE_MASTER_CUSTOMSTYLE textColor = "#9b3026";backgroundColor = "#beb287";borderColor = "#9b3026";
+#define VAR_CLUE_SCROLLS_MASTER_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80908062";borderColor = "#FFC33C30";textAccentColor = "#FF000000";menuTextColor = "#FFC33C30";
 
 
-rule (name:VAR_CLUE_HIDE) { hidden = true; }
 
-rule (name:["clue scroll (beginner)", "reward casket (beginner)", "challenge scroll (beginner)"]) {
-  VAR_CLUE_BEGINNER_CUSTOMSTYLE
+
+apply (name:VAR_CLUE_SCROLLS_HIDE) {
+    hidden = true;
 }
-rule (name:["clue scroll (easy)", "reward casket (easy)", "challenge scroll (easy)"]) {
-  VAR_CLUE_EASY_CUSTOMSTYLE
+
+apply (name:"Clue scroll (beginner)") {
+    VAR_CLUE_SCROLLS_BEGINNER_CUSTOMSTYLE 
 }
-rule (name:["clue scroll (medium)", "reward casket (medium)", "challenge scroll (medium)"]) {
-  VAR_CLUE_MEDIUM_CUSTOMSTYLE
+apply (name:"Clue scroll (easy)") {
+    VAR_CLUE_SCROLLS_EASY_CUSTOMSTYLE 
 }
-rule (name:["clue scroll (hard)", "reward casket (hard)", "challenge scroll (hard)"]) {
-  VAR_CLUE_HARD_CUSTOMSTYLE
+apply (name:"Clue scroll (medium)") {
+    VAR_CLUE_SCROLLS_MEDIUM_CUSTOMSTYLE 
 }
-rule (name:["clue scroll (elite)", "reward casket (elite)", "challenge scroll (elite)"]) {
-  VAR_CLUE_ELITE_CUSTOMSTYLE
+apply (name:"Clue scroll (hard)") {
+    VAR_CLUE_SCROLLS_HARD_CUSTOMSTYLE 
 }
-rule (name:["clue scroll (master)", "reward casket (master)", "challenge scroll (master)"]) {
-  VAR_CLUE_MASTER_CUSTOMSTYLE
+apply (name:"Clue scroll (elite)") {
+    VAR_CLUE_SCROLLS_ELITE_CUSTOMSTYLE 
+}
+apply (name:"Clue scroll (master)") {
+    VAR_CLUE_SCROLLS_MASTER_CUSTOMSTYLE 
 }
 
 
