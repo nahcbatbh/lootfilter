@@ -1,7 +1,9 @@
-meta {
-    name = "nct_filter"
-    description = "OSRS loot filter"
-}
+/*@ define:module:header
+hidden: true
+name: header
+*/
+meta { name = "nct_filter"; }
+
 /*@ define:module:runes
 ---
 name: Runes
