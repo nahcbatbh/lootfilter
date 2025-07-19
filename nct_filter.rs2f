@@ -5406,28 +5406,28 @@ type: style
 label: Easy scroll box custom style
 exampleItem: Scroll box (easy)
 */
-#define VAR_CLUE_SCROLLBOX_EASY_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80908062";borderColor = "#FFC33C30";textAccentColor = "#FF000000";menuTextColor = "#FFC33C30";
+#define VAR_CLUE_SCROLLBOX_EASY_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80908062";borderColor = "#FF248F26";textAccentColor = "#FF000000";menuTextColor = "#FF248F26";
 
 /*@ define:input:clue_scrolls
 type: style
 label: Medium scroll box custom style
 exampleItem: Scroll box (medium)
 */
-#define VAR_CLUE_SCROLLBOX_MEDIUM_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80908062";borderColor = "#FFC33C30";textAccentColor = "#FF000000";menuTextColor = "#FFC33C30";
+#define VAR_CLUE_SCROLLBOX_MEDIUM_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80908062";borderColor = "#FF6CBBBF";textAccentColor = "#FF000000";menuTextColor = "#FF6CBBBF";
 
 /*@ define:input:clue_scrolls
 type: style
 label: Hard scroll box custom style
 exampleItem: Scroll box (hard)
 */
-#define VAR_CLUE_SCROLLBOX_HARD_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80908062";borderColor = "#FFC33C30";textAccentColor = "#FF000000";menuTextColor = "#FFC33C30";
+#define VAR_CLUE_SCROLLBOX_HARD_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80908062";borderColor = "#FFA343BD";textAccentColor = "#FF000000";menuTextColor = "#FFA343BD";
 
 /*@ define:input:clue_scrolls
 type: style
 label: Elite scroll box custom style
 exampleItem: Scroll box (elite)
 */
-#define VAR_CLUE_SCROLLBOX_ELITE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80908062";borderColor = "#FFC33C30";textAccentColor = "#FF000000";menuTextColor = "#FFC33C30";
+#define VAR_CLUE_SCROLLBOX_ELITE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80908062";borderColor = "#FFEED11D";textAccentColor = "#FF000000";menuTextColor = "#FFEED11D";
 
 /*@ define:input:clue_scrolls
 type: style
