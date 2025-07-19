@@ -5403,12 +5403,31 @@ exampleItem: Clue scroll (master)
 
 /*@ define:input:clue_scrolls
 type: style
+label: Easy scroll box custom style
+exampleItem: Scroll box (easy)
+*/
+#define VAR_CLUE_SCROLLBOX_EASY_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80908062";borderColor = "#FFC33C30";textAccentColor = "#FF000000";menuTextColor = "#FFC33C30";
+
+/*@ define:input:clue_scrolls
+type: style
+label: Medium scroll box custom style
+exampleItem: Scroll box (medium)
+*/
+#define VAR_CLUE_SCROLLBOX_MEDIUM_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80908062";borderColor = "#FFC33C30";textAccentColor = "#FF000000";menuTextColor = "#FFC33C30";
+
+/*@ define:input:clue_scrolls
+type: style
 label: Hard scroll box custom style
 exampleItem: Scroll box (hard)
 */
 #define VAR_CLUE_SCROLLBOX_HARD_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80908062";borderColor = "#FFC33C30";textAccentColor = "#FF000000";menuTextColor = "#FFC33C30";
 
-
+/*@ define:input:clue_scrolls
+type: style
+label: Elite scroll box custom style
+exampleItem: Scroll box (elite)
+*/
+#define VAR_CLUE_SCROLLBOX_ELITE_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80908062";borderColor = "#FFC33C30";textAccentColor = "#FF000000";menuTextColor = "#FFC33C30";
 
 
 apply (name:VAR_CLUE_SCROLLS_HIDE) {
@@ -5433,11 +5452,18 @@ apply (name:"Clue scroll (elite)") {
 apply (name:"Clue scroll (master)") {
     VAR_CLUE_SCROLLS_MASTER_CUSTOMSTYLE 
 }
+apply (name:"Scroll box (easy)") {
+    VAR_CLUE_SCROLLBOX_easy_CUSTOMSTYLE 
+}
+apply (name:"Scroll box (medium)") {
+    VAR_CLUE_SCROLLBOX_MEDIUM_CUSTOMSTYLE 
+}
 apply (name:"Scroll box (hard)") {
     VAR_CLUE_SCROLLBOX_HARD_CUSTOMSTYLE 
 }
-
-
+apply (name:"Scroll box (hard)") {
+    VAR_CLUE_SCROLLBOX_ELITE_CUSTOMSTYLE 
+}
 
 
 
