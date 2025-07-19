@@ -5401,6 +5401,13 @@ exampleItem: Clue scroll (master)
 */
 #define VAR_CLUE_SCROLLS_MASTER_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80908062";borderColor = "#FFC33C30";textAccentColor = "#FF000000";menuTextColor = "#FFC33C30";
 
+/*@ define:input:clue_scrolls
+type: style
+label: Hard scroll box custom style
+exampleItem: Scroll box (hard)
+*/
+#define VAR_CLUE_SCROLLBOX_HARD_CUSTOMSTYLE textColor = "#FFFFFFFF";backgroundColor = "#80908062";borderColor = "#FFC33C30";textAccentColor = "#FF000000";menuTextColor = "#FFC33C30";
+
 
 
 
@@ -5425,6 +5432,9 @@ apply (name:"Clue scroll (elite)") {
 }
 apply (name:"Clue scroll (master)") {
     VAR_CLUE_SCROLLS_MASTER_CUSTOMSTYLE 
+}
+apply (name:"Scroll box (hard)") {
+    VAR_CLUE_SCROLLBOX_HARD_CUSTOMSTYLE 
 }
 
 
