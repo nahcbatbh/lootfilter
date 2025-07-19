@@ -5468,7 +5468,7 @@ apply (name:"Scroll box (medium)") {
 apply (name:"Scroll box (hard)") {
     VAR_CLUE_SCROLLBOX_HARD_CUSTOMSTYLE 
 }
-apply (name:"Scroll box (elite)") {
+apply (name:"Scroll box (hard)") {
     VAR_CLUE_SCROLLBOX_ELITE_CUSTOMSTYLE 
 }
 apply (name:"Scroll box (master)") {
