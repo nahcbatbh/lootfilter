@@ -5460,7 +5460,7 @@ apply (name:"Clue scroll (master)") {
     VAR_CLUE_SCROLLS_MASTER_CUSTOMSTYLE 
 }
 apply (name:"Scroll box (easy)") {
-    VAR_CLUE_SCROLLBOX_easy_CUSTOMSTYLE 
+    VAR_CLUE_SCROLLBOX_EASY_CUSTOMSTYLE 
 }
 apply (name:"Scroll box (medium)") {
     VAR_CLUE_SCROLLBOX_MEDIUM_CUSTOMSTYLE 
